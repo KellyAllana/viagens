@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorldTrip — Bundles de Viagem</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">WorldTrip</h1>
+      <nav class="main-nav">
+        <a href="#destinos">Destinos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="cta" href="#destinos">Ver Pacotes</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Explore o mundo com bundles feitos pra você</h2>
+          <p>Pacotes completos com passagens, hospedagem e experiências locais — escolhidos para todos os estilos de viagem.</p>
+          <a class="btn-primary" href="#destinos">Ver pacotes agora</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1"
+               alt="Mapa-mundi estilizado" />
+        </div>
+      </div>
+    </section>
+
+    <section id="destinos" class="packages container">
+      <h3 class="section-title">Bundles populares</h3>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Paris - Torre Eiffel" />
+          <div class="card-body">
+            <h4>Romance em Paris</h4>
+            <p class="meta">7 dias · Hotel 4★ · City tour</p>
+            <p class="desc">Passeios pela cidade-luz, cruzeiro no Sena e tempo livre para cafés e museus.</p>
+            <div class="card-footer">
+              <span class="price">R$ 5.499</span>
+              <button class="btn-outline" onclick="book('Romance em Paris')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Praia em Bali" />
+          <div class="card-body">
+            <h4>Retiro em Bali</h4>
+            <p class="meta">10 dias · Villa · Yoga</p>
+            <p class="desc">Surf, templos e relax em vilas com piscina privativa.</p>
+            <div class="card-footer">
+              <span class="price">R$ 6.299</span>
+              <button class="btn-outline" onclick="book('Retiro em Bali')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Tokyo - noite neon" />
+          <div class="card-body">
+            <h4>Fusão em Tóquio</h4>
+            <p class="meta">6 dias · Moderno · Gastronomia</p>
+            <p class="desc">Culinária, eletrônicos e bairros icônicos como Shibuya e Akihabara.</p>
+            <div class="card-footer">
+              <span class="price">R$ 7.199</span>
+              <button class="btn-outline" onclick="book('Fusão em Tóquio')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1549921296-3a35d0b59a06?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Nova York - skyline" />
+          <div class="card-body">
+            <h4>New York Highlights</h4>
+            <p class="meta">5 dias · Centro · Shows</p>
+            <p class="desc">Broadway, museus e uma imersão no ritmo urbano americano.</p>
+            <div class="card-footer">
+              <span class="price">R$ 4.599</span>
+              <button class="btn-outline" onclick="book('New York Highlights')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Cape Town - Table Mountain" />
+          <div class="card-body">
+            <h4>Aventura na África do Sul</h4>
+            <p class="meta">8 dias · Safari opcional · Trilha</p>
+            <p class="desc">Table Mountain, vinícolas e (opcional) safári de dia inteiro.</p>
+            <div class="card-footer">
+              <span class="price">R$ 8.099</span>
+              <button class="btn-outline" onclick="book('Aventura na África do Sul')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card">
+          <img src="download.jpg" alt="Cairo - pirâmides" />
+          <div class="card-body">
+            <h4>Egito Antigo</h4>
+            <p class="meta">9 dias · Cruzeiro no Nilo · Guiado</p>
+            <p class="desc">Pirâmides, museus e o lendário rio Nilo com guia especializado.</p>
+            <div class="card-footer">
+              <span class="price">R$ 9.299</span>
+              <button class="btn-outline" onclick="book('Egito Antigo')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Rio de Janeiro - Pão de Açúcar" />
+          <div class="card-body">
+            <h4>Brasil: Mar & Cidade (Rio)</h4>
+            <p class="meta">4 dias · Praias · Cultural</p>
+            <p class="desc">Praias famosas, feiras locais e passeios culturais imperdíveis.</p>
+            <div class="card-footer">
+              <span class="price">R$ 1.999</span>
+              <button class="btn-outline" onclick="book('Brasil: Mar & Cidade (Rio)')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Sydney - Opera House" />
+          <div class="card-body">
+            <h4>Austrália Essencial</h4>
+            <p class="meta">10 dias · Natureza · Cidades</p>
+            <p class="desc">Sydney, praias e roteiros por parques nacionais.</p>
+            <div class="card-footer">
+              <span class="price">R$ 10.499</span>
+              <button class="btn-outline" onclick="book('Austrália Essencial')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Santorini - casas brancas" />
+          <div class="card-body">
+            <h4>Encantos de Santorini</h4>
+            <p class="meta">6 dias · Romântico · Pôr do sol</p>
+            <p class="desc">Casas brancas, vinhos e os famosos pores-do-sol gregos.</p>
+            <div class="card-footer">
+              <span class="price">R$ 6.799</span>
+              <button class="btn-outline" onclick="book('Encantos de Santorini')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 10 -->
+        <article class="card">
+          <img src="download (1).jpg" alt="Machu Picchu" />
+          <div class="card-body">
+            <h4>Machu Picchu & Trilha</h4>
+            <p class="meta">5 dias · Histórico · Trekking</p>
+            <p class="desc">Trilha, história Inca e paisagens que ficam na memória.</p>
+            <div class="card-footer">
+              <span class="price">R$ 4.699</span>
+              <button class="btn-outline" onclick="book('Machu Picchu & Trilha')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 11 -->
+        <article class="card">
+          <img src="download (2).jpg" alt="Islandia - geleiras" />
+          <div class="card-body">
+            <h4>Aventuras na Islândia</h4>
+            <p class="meta">7 dias · Geologia · Aventura</p>
+            <p class="desc">Cachoeiras, geleiras e (dependendo da época) auroras boreais.</p>
+            <div class="card-footer">
+              <span class="price">R$ 8.899</span>
+              <button class="btn-outline" onclick="book('Aventuras na Islândia')">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 12 -->
+        <article class="card">
+          <img src="download (3).jpg" alt="Maldivas - bangalô sobre a água" />
+          <div class="card-body">
+            <h4>Maldivas: Luxo & Mar</h4>
+            <p class="meta">6 dias · Resort · All inclusive</p>
+            <p class="desc">Bangalôs sobre o mar, mergulho e muito descanso em alto padrão.</p>
+            <div class="card-footer">
+              <span class="price">R$ 12.499</span>
+              <button class="btn-outline" onclick="book('Maldivas: Luxo & Mar')">Reservar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="about container">
+      <h3>Sobre a WorldTrip</h3>
+      <p>Somos uma agência focada em criar pacotes personalizados e responsáveis — combinando conveniência, segurança e experiências autênticas.</p>
+    </section>
+
+    <section id="contato" class="contact container">
+      <h3>Fale conosco</h3>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Obrigado! Em breve entraremos em contato.');">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu email" required />
+        <textarea placeholder="Mensagem" rows="4"></textarea>
+        <button class="btn-primary" type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> WorldTrip. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Preenche ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Função simples para simular reserva
+    function book(bundleName) {
+      const confirmed = confirm('Deseja reservar o pacote: ' + bundleName + ' ?');
+      if (confirmed) {
+        alert('Obrigado! Recebemos seu pedido de reserva para: ' + bundleName + '. Em breve entraremos em contato.');
+      }
+    }
+  </script>
+</body>
+</html>
